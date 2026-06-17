@@ -14,7 +14,7 @@ class Solution:
         # ReLU: max(0, z)
         # return round(your_answer, 5)
         
-        z = np.array(np.dot(x,w)+b)
+        z = np.dot(x,w)+b
         if activation == "relu":
             z=np.maximum(z,0)
         else:
